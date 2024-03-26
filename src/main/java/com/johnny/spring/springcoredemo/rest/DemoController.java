@@ -33,7 +33,8 @@ public class DemoController {
      * @param theCoach
      */
     @Autowired
-    public DemoController(@Qualifier("baseballCoach") Coach theCoach){
+    public DemoController(@Qualifier("cricketCoach") Coach theCoach){
+        System.out.println("in Constructor: " + getClass().getSimpleName());
         myCoach = theCoach;
     }
 
