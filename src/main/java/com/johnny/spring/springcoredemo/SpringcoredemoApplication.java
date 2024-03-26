@@ -12,9 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Configuration - Able to regist extra beans with @Bean or import
  * other configuration classes
  */
-@SpringBootApplication(
-		scanBasePackages = {"com.johnny.spring.springcoredemo",
-		                    "com.johnny.spring.util"})
+@SpringBootApplication
 public class SpringcoredemoApplication {
 
 	public static void main(String[] args) {
