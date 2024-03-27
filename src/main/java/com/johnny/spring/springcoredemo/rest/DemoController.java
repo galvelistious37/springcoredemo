@@ -12,7 +12,7 @@ public class DemoController {
     // Define a private field for dependency
     private Coach myCoach;
 
-//    private Coach anotherCoach;
+    private Coach anotherCoach;
 
     // Field injection: not recommended by spring.io anymore because it makes testing harder
 //    @Autowired
@@ -34,19 +34,26 @@ public class DemoController {
      * dependency injection for a specific bean
      * @param theCoach
      */
-    @Autowired
-    public DemoController(
-            @Qualifier("cricketCoach") Coach theCoach){
+//    @Autowired
+//    public DemoController(
+//            @Qualifier("cricketCoach") Coach theCoach,
 //            @Qualifier("cricketCoach") Coach anotherCoach){
-        System.out.println("in Constructor: " + getClass().getSimpleName());
-        this.myCoach = theCoach;
+//        System.out.println("in Constructor: " + getClass().getSimpleName());
+//        this.myCoach = theCoach;
 //        this.anotherCoach = anotherCoach;
-    }
+//    }
 
 //    @GetMapping("/check")
 //    public String check(){
 //        return "Comparing beans: myCoach == anotherCoach, " + (myCoach == anotherCoach);
 //    }
+
+    @Autowired
+    public DemoController(
+            @Qualifier("aquatic") Coach theCoach){
+        System.out.println("in Constructor: " + getClass().getSimpleName());
+        this.myCoach = theCoach;
+    }
 
 //    // Setter Injection:
 //    // - Use this when you have optional dependencies
