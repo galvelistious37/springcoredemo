@@ -19,16 +19,16 @@ public class CricketCoach implements Coach{
     }
 
     // Define our init method
-    @PostConstruct
-    public void doMyStartupStuff(){
-        System.out.println("In doMyStartupStuff(): " + getClass().getSimpleName());
-    }
-
-    // Define our destroy method
-    @PreDestroy
-    public void doMyCleanupStuff(){
-        System.out.println("In doMyCleanupStuff(): " + getClass().getSimpleName());
-    }
+//    @PostConstruct
+//    public void doMyStartupStuff(){
+//        System.out.println("In doMyStartupStuff(): " + getClass().getSimpleName());
+//    }
+//
+//    // Define our destroy method
+//    @PreDestroy
+//    public void doMyCleanupStuff(){
+//        System.out.println("In doMyCleanupStuff(): " + getClass().getSimpleName());
+//    }
 
     @Override
     public String getDailyWorkout() {
